@@ -36,8 +36,8 @@ import { fetchData } from '../apis/index';
 
 let dataList = ref([]);
 let picList = ref([
-  { img: 'https://cyberdownload.anrunlu.net/Fgz-UX9_AusF5zV89Z07Zgs92wHo' },
-  { img: 'https://cyberdownload.anrunlu.net/Fs2NicDMd5YJKghjUtPtVNFPxEFL' }
+  { img: 'https://cyberdownload.anrunlu.net/Fo4D3XbYCS6IMNWNFBSjT1uCufrp' },
+  { img: 'https://cyberdownload.anrunlu.net/FtDhdVUiqZEGf8gu_L8lB_WdMMhN' }
 ]);
 let list = []
 const getData = async () => {
@@ -75,8 +75,8 @@ onMounted( async() => {
 }
 .header {
   margin-top: 10px;
-  font-size: 25px;
-  height: 110px;
+  font-size: 30px;
+  height: 9vh;
   margin-left: 5.3333vw;
   display: flex;
 }
