@@ -1,20 +1,16 @@
 <template>
   <div class="container">
-    <div class="header"></div>
-    <div class="content">
+    <div class="header">空间列表</div>
+    <div>
       <div v-for="(item,index) in dataList" :key="item.title" class="main">
         
         <div 
           class="box" 
           :style="{ backgroundImage: `url(${item.img})` }"
-          @click="navigateToMap(index, item.title)"
+          @click="$router.push(`/detail/${index}`)"
         >
           <div class="overlay"></div>
-          <div class="title">
-            <div >{{ item.title }}</div>
-            <div >{{ item.addr }}</div>
-          </div>
-          
+          <div class="title">{{ item.title }}</div>
         </div>
       </div>
     </div>
@@ -34,10 +30,10 @@
 
 <script setup>
 import { onMounted, ref } from 'vue';
-import { useRouter } from 'vue-router'; // 导入 useRouter
+
 
 import { fetchData } from '../apis/index';
-const router = useRouter();
+
 let dataList = ref([]);
 let picList = ref([
   { img: 'https://cyberdownload.anrunlu.net/Fgz-UX9_AusF5zV89Z07Zgs92wHo' },
@@ -62,14 +58,8 @@ const mergeData = () => {
   dataList.value = mergedArray;
 };
 
-const navigateToMap = (index, title) => {
-  document.title = title;  // 设置动态标题
-  // 路由跳转到 map 页面
-  router.push(`/map/${index}`);
-};
 onMounted( async() => {
   await getData();
-  document.title = '资源列表';  // 设置动态标题
   
 });
 
@@ -82,17 +72,11 @@ onMounted( async() => {
   height: 100vh;
   width: 100vw;
   position: absolute;
-  
-}
-.content {
-  height:80vh ;
-  flex: 1; /* 允许内容区域填充剩余空间 */
-  overflow-y: auto; /* 允许垂直滚动 */
 }
 .header {
   margin-top: 10px;
-  font-size: 30px;
-  height: 20px;
+  font-size: 25px;
+  height: 110px;
   margin-left: 5.3333vw;
   display: flex;
 }
@@ -102,7 +86,6 @@ onMounted( async() => {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 .box {
   position: relative;
@@ -118,9 +101,8 @@ onMounted( async() => {
   align-items: center;
   color: white;
   font-size: 20px;
-  
+  overflow: hidden; 
 }
-
 
 .overlay {
   position: absolute;
@@ -135,15 +117,11 @@ onMounted( async() => {
 
 .title {
   position: absolute;
-  z-index: 3;
-  color: rgb(255, 255, 255);
+  z-index: 2;
+  color: white;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  display: flex;  
-  flex-direction: column;  
-  justify-content: center;
-  align-items: center; 
 }
 .footer {
   display: flex;
@@ -151,7 +129,7 @@ onMounted( async() => {
   align-items: center;
   position: absolute;
   bottom: 0px;
-  height: 60px;
+  height: 16vw;
   width: 100vw;
   background-color: #F7FBF1;
   z-index: 10;

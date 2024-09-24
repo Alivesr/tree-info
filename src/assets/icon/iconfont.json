@@ -6,69 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "1090225",
-      "name": "返回箭头",
-      "font_class": "fanhuijiantou",
-      "unicode": "e63f",
-      "unicode_decimal": 58943
-    },
-    {
-      "icon_id": "11746369",
-      "name": "返回箭头",
-      "font_class": "back",
-      "unicode": "e60a",
-      "unicode_decimal": 58890
-    },
-    {
-      "icon_id": "316072",
-      "name": "water",
-      "font_class": "5",
-      "unicode": "e604",
-      "unicode_decimal": 58884
-    },
-    {
-      "icon_id": "25070899",
-      "name": "固体",
-      "font_class": "guti",
-      "unicode": "e6bf",
-      "unicode_decimal": 59071
-    },
-    {
-      "icon_id": "20020763",
-      "name": "长箭头",
-      "font_class": "ttd-copy",
-      "unicode": "e600",
-      "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "976734",
-      "name": "试剂",
-      "font_class": "shiji",
-      "unicode": "e669",
-      "unicode_decimal": 58985
-    },
-    {
-      "icon_id": "1305048",
-      "name": "温度",
-      "font_class": "wendu",
-      "unicode": "e62e",
-      "unicode_decimal": 58926
-    },
-    {
-      "icon_id": "18170247",
-      "name": "电,闪电,电力,电量",
-      "font_class": "lightning-full",
-      "unicode": "e995",
-      "unicode_decimal": 59797
-    },
-    {
-      "icon_id": "35343626",
-      "name": "水滴",
-      "font_class": "shuidi",
-      "unicode": "e613",
-      "unicode_decimal": 58899
-    },
-    {
       "icon_id": "8221854",
       "name": "wode",
       "font_class": "wode1",

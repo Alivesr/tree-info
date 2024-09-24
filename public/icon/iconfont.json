@@ -6,34 +6,6 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "976734",
-      "name": "试剂",
-      "font_class": "shiji",
-      "unicode": "e669",
-      "unicode_decimal": 58985
-    },
-    {
-      "icon_id": "1305048",
-      "name": "温度",
-      "font_class": "wendu",
-      "unicode": "e62e",
-      "unicode_decimal": 58926
-    },
-    {
-      "icon_id": "18170247",
-      "name": "电,闪电,电力,电量",
-      "font_class": "lightning-full",
-      "unicode": "e995",
-      "unicode_decimal": 59797
-    },
-    {
-      "icon_id": "35343626",
-      "name": "水滴",
-      "font_class": "shuidi",
-      "unicode": "e613",
-      "unicode_decimal": 58899
-    },
-    {
       "icon_id": "8221854",
       "name": "wode",
       "font_class": "wode1",
